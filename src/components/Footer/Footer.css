@@ -1,0 +1,154 @@
+.footer {
+    background: #071B3D;
+    padding: 5rem 0;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    overflow-y: hidden;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 25%;
+    background-image: url(../../asset/pattern10.png);
+    background-size: cover;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    right: 0;
+    height: 48rem;
+    z-index: -1;
+}
+
+.footer__row {
+    display: flex;
+    margin-bottom: 8rem;
+    max-width: 120rem;
+}
+
+.footer__logo {
+    width: 41%;
+}
+
+.footer__logo h3 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+    line-height: 1.22;
+    font-weight: 600;
+}
+
+.footer__logo span{
+    display: block;
+}
+
+.footer__logo img {
+    max-width: 100%;
+}
+
+.footer__links {
+    width: 59%;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.footer__links h5 {
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer__links a {
+    color: #838D9B;
+    display: inline-block;
+    margin-bottom: 1rem;
+    transition: color .3s ease-in-out;
+}
+
+.footer__bottom {
+    display: flex;
+    -webkit-box-align: end;
+    align-items: flex-end;
+    max-width: 120rem;
+}
+
+.footer__bottom div:first-child {
+    width: 41%;
+}
+
+.footer .social {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer__bottom a {
+    border-bottom: 1px solid transparent;
+    color: #fff;
+}
+
+.footer__bottom div:last-child {
+    width: 59%;
+}
+
+@media(max-width:768px){
+    .footer__row {
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+.footer__logo h3 {
+    font-size: 2.5rem;
+}
+
+.footer__row > div:first-child {
+    width: 30%;
+}
+
+.footer__logo h3{
+    line-height: 1.2;
+}
+
+.footer__links {
+    flex-direction: column;
+}
+
+.footer__links > div {
+    margin-top: 3rem;
+}
+
+.footer__links h5 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.footer__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: start;
+    align-items: flex-start;
+}
+
+.footer__bottom div:first-child {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.footer__bottom div:last-child {
+    width: 100%;
+}
+}
+
+@media(max-width:568px){
+    .footer::before {
+    bottom: 0;
+    top: unset;
+}
+}

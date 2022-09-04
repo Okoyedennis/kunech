@@ -1,0 +1,76 @@
+.reach .card {
+    flex: 1;
+    background: #e9f6fc;
+    height: 20rem;
+    position: relative;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.reach .card__front, .card__back{
+    overflow: hidden;
+}
+
+.reach .card__front, .reach .card__back {
+    padding: 3rem 2rem;
+    background-image: url(../../asset/pattern6.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    /* height: 100%;
+    width: 100%; */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: ease-in-out 600ms;
+    overflow: hidden;
+
+    
+}
+
+.card__front span{
+    color: #606D83;
+
+}
+
+.card__back span {
+    font-weight: 600;
+    color: #071b3d;
+
+}
+
+.reach h5 {
+    margin: 0.5rem 0 0;
+    font-size: 2.2rem;
+}
+
+.reach .social__links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 1200px){
+
+
+}
+
+@media (max-width:768px){
+    .reach .card__front, .reach .card__back {
+    background-image: none;
+    
+}
+}
+
+@media(max-width:568px){
+    .reach h5 {
+    font-size: 1.5rem;
+}
+
+.reach .card {
+    height: 18rem;
+    width: 100%;
+}
+}

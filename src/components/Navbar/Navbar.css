@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+
+.navbar{
+    max-width: 100%;
+    /* background-color: #fff; */
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.navbar-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.navbar__right{
+    display: flex;
+    align-items: center;
+}
+
+.navbar__logo{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navbar__logo img{
+    height: 3.5rem;
+
+}
+
+ .nav-links{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style-type: none;
+}
+
+.nav-links .li{
+    font-weight: 500;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+}
+
+.nav-links .li:hover{
+    opacity: .7;
+}
+
+.menu-icon {
+  display: none;
+}
+
+li .active{
+   border-bottom-color: #33CC99 !important;
+}
+
+.currentUser-wrapper li{
+    list-style: none;
+
+}
+
+.ul__footer{
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+ .navbar{
+     position: relative;
+     top: 0;
+    position: sticky;
+    z-index: 1000;
+        background: #071B3D;
+ }
+
+ .navbar__right{
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    width: 100%;
+    height: calc(100vh - 120px);
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    background-color: #071B3D;
+     z-index: 1000;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+ }
+
+ .ul__footer{
+display: block;
+      padding: 2rem;
+    width: 90%;
+    color: #fff;
+  
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+ }
+
+ .ul__footer h3{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+      font-size: 1rem;
+    line-height: 1.2;
+    gap: .5rem;
+ }
+
+ .ul__footer .social{
+        display: flex;
+    text-align: left;
+      font-size: 1.5rem;
+    line-height: 1.2;
+    gap: .5rem;
+ }
+
+ .navbar__right.active{
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 100;
+ }
+
+ .nav-links{
+     display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 2rem;
+    width: 90%;
+    display: table;
+
+ } 
+
+   .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .navbar__right .navbar__contact{
+    margin-left: 0rem;
+}
+
+.nav-links li{
+    margin-bottom: 1rem;
+
+}
+
+.nav-links .li{
+    color: #fff !important;
+}
+}

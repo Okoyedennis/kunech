@@ -1,0 +1,62 @@
+.process__col::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-image: url(../../asset/pattern8a.png);
+}
+
+.process__col {
+  flex: 1;
+  background: #f6fafc;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.process__col:hover {
+    transform: translateY(-3rem);
+}
+
+.process__col--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.process__col--header h3 {
+  font-size: 2.5rem;
+  line-height: 1.22;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 600;
+  color: #071b3d;
+}
+
+.process__col--body p{
+        color: #606D83;
+}
+
+.process__col p:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 1200px){
+     .process__row {
+    flex-direction: column;
+}
+}
+
+@media (max-width: 768px){
+    .process__col--header  h3 {
+    font-size: 2rem;
+    line-height: 1.2;
+}
+}

@@ -1,0 +1,21 @@
+<svg width="240" height="97" viewBox="0 0 240 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_60_225" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="0" width="240" height="97">
+<path d="M4 8.9126C4 4.49432 7.58172 0.912598 12 0.912598H236C240.418 0.912598 244 4.49432 244 8.9126V96.9126H4V8.9126Z" fill="#33CC99"/>
+</mask>
+<g mask="url(#mask0_60_225)">
+<path d="M-51.8109 -129.884C-328.424 -41.1698 349.176 156.521 833.984 77.7598" stroke="#2EB98F" stroke-width="1.5" stroke-miterlimit="10"/>
+<path d="M-49.4889 -113.917C-299.199 -24.988 361.239 130.601 835.683 62.5802" stroke="#2EB98F" stroke-width="1.5" stroke-miterlimit="10"/>
+<path d="M-47.1667 -97.9497C-269.975 -8.87774 373.246 104.61 837.326 47.3291" stroke="#2EB98F" stroke-width="1.5" stroke-miterlimit="10"/>
+<path d="M-44.8447 -81.9826C-240.807 7.30417 385.253 78.6906 838.968 32.1497" stroke="#2EB98F" stroke-width="1.5" stroke-miterlimit="10"/>
+<path d="M-42.5225 -66.0156C-211.582 23.4144 397.317 52.7709 840.611 16.9702" stroke="#2EB98F" stroke-width="1.5" stroke-miterlimit="10"/>
+<path d="M-40.2004 -50.0485C-182.358 39.5247 409.324 26.7796 842.253 1.71914" stroke="#2EB98F" stroke-width="1.5" stroke-miterlimit="10"/>
+<path d="M-37.8783 -34.0814C-153.19 55.635 421.331 0.860027 843.952 -13.4603" stroke="#2EB98F" stroke-width="1.5" stroke-miterlimit="10"/>
+<path d="M-35.5562 -18.0424C-123.966 71.8888 433.338 -25.0594 845.595 -28.6395" stroke="#2EB98F" stroke-width="1.5" stroke-miterlimit="10"/>
+<path d="M-33.2341 -2.07549C-94.7414 87.9989 445.401 -50.9792 847.237 -43.8191" stroke="#2EB98F" stroke-width="1.5" stroke-miterlimit="10"/>
+<path d="M-30.912 13.8915C-65.5169 104.109 457.408 -76.9705 848.88 -59.0703" stroke="#2EB98F" stroke-width="1.5" stroke-miterlimit="10"/>
+<path d="M-28.59 29.8587C-36.3492 120.291 469.415 -102.89 850.579 -74.2496" stroke="#2EB98F" stroke-width="1.5" stroke-miterlimit="10"/>
+<path d="M-26.2678 45.8256C-7.12467 136.401 481.479 -128.81 852.221 -89.4293" stroke="#2EB98F" stroke-width="1.5" stroke-miterlimit="10"/>
+<path d="M-23.9457 61.7928C22.0998 152.583 493.486 -154.801 853.864 -104.68" stroke="#2EB98F" stroke-width="1.5" stroke-miterlimit="10"/>
+<path d="M-21.6236 77.7598C51.2676 168.693 505.493 -180.721 855.506 -119.86" stroke="#2EB98F" stroke-width="1.5" stroke-miterlimit="10"/>
+</g>
+</svg>

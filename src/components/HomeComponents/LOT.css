@@ -1,0 +1,180 @@
+.lot {
+  position: relative;
+  z-index: 2;
+  margin-top: 9rem;
+}
+
+.lot__wrapper::before {
+  content: "";
+  position: absolute;
+  bottom: 25%;
+  left: 0;
+  width: 100%;
+  height: 15rem;
+  background-image: url(../../asset/pattern2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.lot__wrapper {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  /* padding-bottom: 10rem; */
+  padding-left: 10rem;
+  gap: 4rem;
+}
+
+.lot__left {
+  position: relative;
+}
+
+.lot__stat-count {
+  content: "";
+  position: absolute;
+  border-radius: 8px;
+  top: -6rem;
+  left: -7rem;
+  width: 12rem;
+  /* height: 25rem; */
+  background-repeat: no-repeat;
+  z-index: 5;
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.lot__stat-count h5 {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.count span {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: "Roboto Slab", sans-serif;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.lot__people p {
+  font-size: 1rem;
+  line-height: 1.3;
+  color: #fff;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+.lot__people span {
+  font-weight: 600;
+}
+
+.lot__right {
+  max-width: 50rem;
+}
+
+.lot__right h3 {
+  font-size: 2.5rem;
+  line-height: 1.22;
+  margin-top: 0.8rem;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 600;
+  color: #071b3d;
+}
+
+.lot__right p {
+  color: #606d83;
+  margin: 1.7rem 0 3rem;
+}
+
+.lot__right a {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 2px solid #33cc99;
+  font-weight: 600;
+  color: #071b3d;
+  transition: border 0.3s ease-in-out;
+}
+
+
+@media (max-width: 1400px) {
+  .lot__stat-count {
+    display: none;
+  }
+
+  .lot__wrapper {
+    padding-left: 0rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .lot {
+    margin-top: 3rem;
+  }
+
+  .lot__left {
+    margin-top: 5rem;
+  }
+
+  .lot__wrapper {
+    flex-direction: column-reverse;
+    padding-left: 0rem;
+  }
+
+  .lot__stat-count {
+    display: block;
+  }
+
+  .lot__right p {
+    margin: 1.7rem 0 1rem;
+  }
+}
+
+@media (max-width: 568px) {
+  .lot__left {
+    width: 100%;
+  }
+
+  .lot__left img {
+    width: 100%;
+  }
+
+  .lot__stat-count {
+    left: -0rem;
+    width: 8rem;
+    height: 10rem;
+    padding: 3rem;
+  }
+
+  .lot__stat-count h5 {
+    font-size: 1rem;
+    margin-top: -1.5rem;
+  }
+
+  .lot__stat-count span {
+    font-size: 1.5rem;
+  }
+
+  .lot__people img {
+    margin-top: 0.5rem;
+  }
+
+  .lot__people p {
+    font-size: 0.8rem;
+    line-height: 1.3;
+    color: #fff;
+  }
+}

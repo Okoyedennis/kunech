@@ -1,0 +1,193 @@
+.swipper {
+  position: relative;
+  z-index: 10;
+}
+
+.swipper__wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+  transition-duration: 0ms;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.swipper__wrapper  > * {
+    flex: 1;
+}
+
+.swipper__left {
+  background: #33cc99;
+  padding: 5rem;
+}
+
+.swipper__left-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.swipper_left-botton {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+}
+
+.swipper_left-botton button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: #fff;
+  transition: all 0.3s ease;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+button .icon {
+  font-size: 2rem;
+  color: #071b3d !important;
+  font-weight: 900;
+}
+
+.icon:before {
+  content: "\f053";
+}
+
+.swipper__left span {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.swipper__left-body {
+  color: #fff;
+}
+
+.swipper__left-body h2 {
+  margin: 3rem 0 2rem;
+  font-size: 4rem;
+  line-height: 1.25;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 600;
+}
+
+.swipper__left-body p {
+    margin-bottom: 2.3rem;
+}
+
+.swipper__right {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.swipper__right img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.reach {
+    background: #F6FAFC;
+    padding: 8rem 0;
+}
+
+.reach__header {
+    width: 100%;
+    margin: 0 auto 6rem;
+    text-align: center;
+}
+
+.reach__header h2{
+      font-size: 4.8rem;
+          line-height: 1.25;
+          font-family: "Roboto Slab", sans-serif;
+    font-weight: 600;
+    color: #071B3D;
+}
+
+.reach__header p{
+      color: #606D83;
+}
+
+.reach__body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    cursor: pointer;
+}
+
+
+
+
+
+@media(max-width: 768px){
+  .swipper__wrapper{
+        flex-direction: column;
+  }
+
+  .swipper__left{
+        padding: 5rem 3rem;
+  }
+
+  .swipper__left-body h2{
+    font-size: 3rem;
+    line-height: 1.35;
+  }
+
+.reach__header h2 {
+    font-size: 3rem;
+    line-height: 1.25;
+    
+}
+
+.reach__body {
+   grid-template-columns: 1fr;
+}
+}
+
+@media(max-width: 568px){
+
+  .swipper__left {
+    padding: 3rem 3rem;
+}
+
+    .swipper__left-body h2{
+  font-size: 2rem;
+    line-height: 1.35;
+    margin: 1rem 0rem;
+  }
+
+  .swipper__left span {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+  .swipper_left-botton button {
+   
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    
+}
+
+  button .icon {
+    font-size: 1rem;
+    color: #071b3d !important;
+    font-weight: 900;
+}
+
+.reach__header h2 {
+    font-size: 2rem;
+}
+}

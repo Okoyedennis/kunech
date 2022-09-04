@@ -1,0 +1,168 @@
+.workTogether {
+  height: calc(100vh - 80px);
+  overflow: hidden;
+  width: 100%;
+}
+
+.workTogether::before {
+  bottom: -1rem;
+  height: 30rem;
+  width: 100%;
+  background-image: url(../../asset/pattern4.png);
+  content: "";
+  position: absolute;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: -1;
+}
+
+.workTogether__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  height: 100%;
+}
+
+.workTogether__wrapper > div {
+  width: 50%;
+}
+
+.workTogether__left h1 {
+  font-size: 4rem;
+  line-height: 1.25;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 600;
+  color: #071b3d;
+}
+
+.workTogether__left > p {
+  color: #606d83;
+  max-width: 60rem;
+  margin: 2rem 0 4rem;
+}
+
+.workTogether__left .stats {
+  display: flex;
+  justify-content: space-between;
+  max-width: 56rem;
+}
+
+.stats > div:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.stats p {
+  color: #606d83;
+}
+
+.stats p span {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 4.6rem;
+  color: #071b3d;
+}
+
+.stats p:last-of-type {
+  font-weight: 500;
+  line-height: 1.3;
+  color: #606d83;
+  font-size: 1.5rem;
+}
+
+.workTogether__right {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.workTogether__right img {
+  max-width: unset;
+  object-fit: cover;
+  height: 100%;
+}
+
+.process {
+  padding: 10rem 0;
+}
+
+.process .process__header {
+  max-width: 57rem;
+  text-align: center;
+  margin: 0 auto 6rem;
+  padding: 0 2rem;
+}
+
+.process__header h2 {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 600;
+  color: #071b3d;
+  line-height: 1.25;
+  font-size: 3.5rem;
+}
+
+.process__header p{
+  color: #606D83;
+}
+
+.process__row{
+    display: flex;
+    gap: 6rem;
+}
+
+@media (max-width: 768px) {
+  .workTogether {
+    height: 90vh;
+    min-height: 100vh;
+    padding-top: 5rem;
+    padding-bottom: 0;
+  }
+
+  .workTogether__wrapper {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .workTogether__wrapper > div {
+    width: 100%;
+  }
+  .workTogether__left h1,
+  .workTogether__left p {
+    text-align: center;
+  }
+
+  .workTogether__left .stats {
+    display: none;
+  }
+}
+
+@media (max-width: 568px) {
+  .workTogether {
+    height: 90vh;
+    min-height: 100vh;
+    padding-top: 0rem;
+  }
+
+  .workTogether__wrapper {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .workTogether__left h1 {
+    font-size: 2.5rem;
+  }
+
+  .workTogether__right {
+    display: none;
+  }
+}
+
+@media (max-width: 586px){
+    .process {
+    padding: 0rem 0;
+}
+.process__header h2 {
+    font-size: 2.7rem;
+}
+}
